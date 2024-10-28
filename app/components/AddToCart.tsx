@@ -9,7 +9,7 @@ interface Props {
 }
 
 const BuyingOptions: FC<Props> = ({ product }) => {
-  const { updateCart }: any = useCart();
+  const { updateCart } = useCart();
   const onAddToCartClick = () => {
     updateCart(product, 1);
   };

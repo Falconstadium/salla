@@ -10,9 +10,8 @@ import AddToCart from "@/app/components/AddToCart";
 export default function ProductPage() {
   const { id } = useParams();
 
-  console.log(id);
-
-  let productArray: any = [];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let productArray: any[] = [];
   if (Array.isArray(id)) {
     productArray = id
       .map((idItem) =>
@@ -38,7 +37,7 @@ export default function ProductPage() {
     <article className="grid min-h-dvh grid-rows-[auto_1fr]">
       <ProductNav />
       <div className="container mx-auto flex w-full flex-col items-center justify-center p-4">
-        {productArray.map((product: any) => (
+        {productArray?.map((product) => (
           <div
             key={product.id}
             className="grid place-items-center gap-4 lg:grid-cols-2"

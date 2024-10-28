@@ -14,6 +14,7 @@ export default function cart() {
     updateCart,
     removeFromCart,
     countTotalPrice,
+    // eslint-disable-next-line react-hooks/rules-of-hooks
   } = useCart();
 
   return (
@@ -53,7 +54,7 @@ export default function cart() {
         ) : (
           <>
             <main className="container mx-auto w-full">
-              {cartItems?.map((cartItem: any) => {
+              {cartItems?.map((cartItem) => {
                 return (
                   <div key={cartItem.product.id} className="px-8">
                     <div className="my-2 flex items-center justify-between lg:justify-around">
