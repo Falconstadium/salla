@@ -18,7 +18,7 @@ export default function Products({ id, title, image, price }: any) {
         height={180}
         alt={title}
         placeholder="blur"
-        className="cursor-pointer object-cover transition-all duration-200 ease-in-out hover:scale-110 lg:h-48 lg:w-48"
+        className="cursor-pointer object-cover drop-shadow-md transition-all duration-200 ease-in-out hover:scale-110 lg:h-48 lg:w-48"
       />
 
       <div className="flex items-center justify-center gap-2">
