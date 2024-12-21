@@ -25,7 +25,7 @@ export default function Navbar() {
   const cartItems = countAllItems();
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between bg-background px-6 py-2 shadow-[0_0_10px_#94a3b8] lg:px-20">
+    <header className="sticky top-0 z-50 flex items-center justify-between bg-background px-6 py-2 shadow-[0_0_10px_#94a3b8] lg:px-20 lg:py-4">
       <Link className="items flex gap-2 text-indigo-700" href={"/"}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

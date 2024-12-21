@@ -22,9 +22,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <main className="container mx-auto grid gap-8 bg-background pb-12 pt-4">
+    <main className="container mx-auto grid gap-8 bg-background pb-12 pt-4 lg:pt-6">
       <Cards />
-      <section className="grid gap-16 px-8 pt-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-12 lg:px-0">
+      <section className="grid gap-16 px-8 pt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-12 lg:px-12">
         {items?.map((item) => (
           <Products
             key={item.id}

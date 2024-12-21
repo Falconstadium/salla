@@ -13,7 +13,7 @@ export default function collection() {
   return (
     <article className="grid min-h-dvh grid-rows-[auto_1fr_auto]">
       <Navbar />
-      <main className="container mx-auto grid gap-16 px-8 py-8 lg:gap-12 lg:px-4 lg:py-12">
+      <main className="container mx-auto grid gap-16 px-8 py-8 lg:gap-12 lg:px-12 lg:py-12">
         <div>
           <Input
             className="mx-auto w-full lg:max-w-lg"
