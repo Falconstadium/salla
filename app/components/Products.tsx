@@ -14,22 +14,22 @@ export default function Products({ id, title, image, price }: any) {
     >
       <Image
         src={image}
-        width={180}
-        height={180}
+        width={130}
+        height={130}
         alt={title}
         placeholder="blur"
-        className="cursor-pointer object-cover drop-shadow-md transition-all duration-200 ease-in-out hover:scale-110 lg:h-48 lg:w-48"
+        className="cursor-pointer object-cover drop-shadow-md transition-all duration-200 ease-in-out hover:scale-110 lg:h-40 lg:w-40"
       />
 
       <div className="flex items-center justify-center gap-2">
-        <h5 className="text-nowrap text-sm capitalize text-muted-foreground">
+        <h5 className="text-nowrap text-sm font-medium capitalize text-muted-foreground">
           {title}
         </h5>
         <h6 className="text-nowrap text-xl font-medium">{price} Dh</h6>
       </div>
 
       <Button variant={"green"} size={"sm"}>
-        <Link className="flex items-center gap-1" href={`/shop/${id}`}>
+        <Link className="flex items-center gap-1 text-xs" href={`/shop/${id}`}>
           More Details
           <svg
             xmlns="http://www.w3.org/2000/svg"

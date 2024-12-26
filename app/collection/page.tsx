@@ -7,7 +7,6 @@ import { products } from "../assets/data";
 import { Input } from "@/components/ui/input";
 
 export default function collection() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [search, setSearch] = useState("");
 
   return (
@@ -22,7 +21,7 @@ export default function collection() {
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
-        <div className="grid gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-16 px-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {products
             ?.filter((item) => {
               return search.toLowerCase() === ""

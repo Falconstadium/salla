@@ -11,7 +11,7 @@ export default function Cards() {
         width={350}
         height={200}
         alt="banner"
-        className="h-auto w-full rounded-md md:w-[700px] lg:h-[450px] lg:w-[900px]"
+        className="h-auto w-full rounded-md md:w-[700px] lg:h-[470px] lg:w-[900px]"
       />
     </section>
   );

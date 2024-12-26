@@ -26,11 +26,11 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between bg-background px-6 py-2 shadow-[0_0_10px_#94a3b8] lg:px-20 lg:py-4">
-      <Link className="items flex gap-2 text-indigo-700" href={"/"}>
+      <Link className="flex items-center gap-2 text-indigo-700" href={"/"}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -143,8 +143,8 @@ export default function Navbar() {
                 key={link.id}
                 className={
                   isActive
-                    ? "rounded bg-indigo-700 px-3 py-1 font-medium text-light"
-                    : "rounded bg-transparent px-3 py-1 font-medium text-slate-950 transition-colors duration-200 ease-in-out hover:bg-indigo-600 hover:text-white dark:text-foreground"
+                    ? "rounded bg-indigo-700 px-3 py-1 text-sm font-medium text-light"
+                    : "rounded bg-transparent px-3 py-1 text-sm font-medium text-slate-950 transition-colors duration-200 ease-in-out hover:bg-indigo-600 hover:text-white dark:text-foreground"
                 }
                 href={link.href}
               >

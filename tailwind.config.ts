@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        Montserrat: "Montserrat",
+        Montserrat: ["Montserrat", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -66,7 +66,6 @@ const config: Config = {
         firstCard: "url('assets/pexels-dom-j-7304-45980.jpg')",
         secondCard: "url('assets/pexels-enginakyurt-2672634.jpg')",
       },
-      
     },
   },
   plugins: [require("tailwindcss-animate")],
