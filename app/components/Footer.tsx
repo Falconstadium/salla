@@ -20,7 +20,7 @@ export default function Footer() {
         <path d="M3 11h3c.8 0 1.6.3 2.1.9l1.1.9c1.6 1.6 4.1 1.6 5.7 0l1.1-.9c.5-.5 1.3-.9 2.1-.9H21" />
       </svg>
       <p className="text-sm font-medium capitalize">
-        All rights reserved &copy; 2024
+        All rights reserved &copy; {new Date().getFullYear()}
       </p>
     </footer>
   );

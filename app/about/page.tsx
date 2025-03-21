@@ -22,7 +22,7 @@ export default function about() {
         </p>
       </section>
       <footer className="bg-indigo-700 py-4 text-center font-medium text-white">
-        2024 &copy;
+        {new Date().getFullYear()} &copy;
       </footer>
     </article>
   );
