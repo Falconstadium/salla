@@ -6,7 +6,7 @@ import Products from "../components/Products";
 import { products } from "../assets/data";
 import { Input } from "@/components/ui/input";
 
-export default function collection() {
+const Collection = () => {
   const [search, setSearch] = useState("");
 
   return (
@@ -40,8 +40,10 @@ export default function collection() {
         </div>
       </main>
       <footer className="bg-indigo-700 py-4 text-center text-white">
-        2024 &copy;
+        {new Date().getFullYear()} &copy;
       </footer>
     </article>
   );
-}
+};
+
+export default Collection;
